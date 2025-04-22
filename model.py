@@ -1,7 +1,7 @@
 from transformers import pipeline, AutoTokenizer, AutoModelForCausalLM
 import torch
 
-# Pilih model chatbot ringan (DistilGPT-2 ~82 juta parameter)
+# Pilih model chatbot ringan (TinyLlama-300 juta parameter)
 model_name = "TinyLlama/TinyLlama-1.1B-Chat-v1.0"
 tokenizer = AutoTokenizer.from_pretrained(model_name)
 model = AutoModelForCausalLM.from_pretrained(model_name)
